@@ -34,6 +34,10 @@ jobs:
           fi
       - name: Test the symbol processing tools
         run: swift test --package-path Tools --scratch-path "$RUNNER_TEMP/corlex-tools"
+      - name: Check alternate stack preparation without pending capture
+        run: |
+          Tools/test-altstack.sh
+          Tools/test-thread-stack.sh
       - name: Exercise the actual transport source security harness
         run: Tools/test-transport.sh
       - name: Exercise the exact client and privacy pipeline

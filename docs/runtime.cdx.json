@@ -3,7 +3,7 @@
   "specVersion": "1.6",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T20:49:26Z",
+    "timestamp": "2026-11-12T22:40:47Z",
     "component": {
       "type": "library",
       "name": "Corlex Swift SDK",
@@ -24,7 +24,7 @@
       },
       {
         "name": "corlex:sdk-source-tree:sha1",
-        "value": "23d2df127b8a36a8563d8dfc62f1acc41540fe93"
+        "value": "5fdaf94fdb672ab43a24df4bf8cb6df2c8e2d7d0"
       },
       {
         "name": "corlex:sdk-package-manifest:sha256",
@@ -44,7 +44,7 @@
       },
       {
         "name": "corlex:validation",
-        "value": "SDK and Tools swift package dump-package dependencies[]; full iOS134/134, failures0/skips0;76 exact client/ledger and59 Foundation/transport tests; ASan writer4 modes and fresh-process exception passed. Standalone public-source/hosted checks remain required before release."
+        "value": "SDK/Tools SwiftPM manifests have no external package dependencies;76 exact Foundation client/ledger tests and real C/Swift main-thread preparation own/host ASan probes pass. Full hosted iOS suite, native writer/exception/rearm and transport gates are required on this exact public revision before release."
       },
       {
         "name": "corlex:required-reason-file-metadata",

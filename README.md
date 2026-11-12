@@ -37,3 +37,5 @@ Automatic lifecycle and screen events, explicit product events, consent, offline
 Xcode with an iOS simulator and Swift 5.9 or newer. Tested locally with Xcode 27.1 / Swift 6.4. `xcodebuild test -scheme Corlex -destination "platform=iOS Simulator,id=<your-test-simulator>" -parallel-testing-enabled NO`; `swift test --package-path Tools`; `Tools/test-transport.sh`, `Tools/test-client.sh`, `Tools/test-crash-rearm.sh`, `Tools/test-crash-exception.sh` and `Tools/test-crash-writer.sh` on macOS.
 
 See [troubleshooting](docs/TROUBLESHOOTING.md), [security](SECURITY.md), [contributing](CONTRIBUTING.md), [release process](docs/PUBLISHING.md) and [changelog](CHANGELOG.md). MIT covers our SDK code; bundled third-party tools/dependencies keep their own licenses/notices.
+
+Native signal stack preparation runs on main without installing handlers or arming collection while consent is pending. It preserves an existing host stack. Alternate stack protection applies to the prepared main thread; stack-overflow protection for every app thread is not claimed. SDK state/network work keeps its existing queues.

@@ -5,6 +5,7 @@ import Foundation
 /// memory and are sent after `optIn()`; `optOut()` clears everything and survives restarts.
 extension CorlexClient {
     func optIn() {
+        if env.installGlobalHooks && options.autocapture.crashes { NativeCrashThreadStack.prepare() }
         let expected = binding.refusalToken
         queue.async { self.grant(persistChoice: true, expectedRefusal: expected) }
     }

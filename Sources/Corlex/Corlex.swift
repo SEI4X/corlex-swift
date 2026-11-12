@@ -38,6 +38,7 @@ public enum Corlex {
     static func start(key: String, options: CorlexOptions, environment: ClientEnvironment) {
         guard StorageBinding.validKey(key) else { print("[corlex] invalid_sdk_key"); return }
         guard endpointsAllowed(options) else { print("[corlex] invalid_endpoint"); return }
+        if environment.installGlobalHooks && options.autocapture.crashes { NativeCrashThreadStack.prepare() }
         lock.lock()
         defer { lock.unlock() }
         if shared == nil { shared = CorlexClient(key: key, options: options, env: environment) }

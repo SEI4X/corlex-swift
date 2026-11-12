@@ -1,6 +1,7 @@
 #include <dlfcn.h>
 #include <fcntl.h>
 #include <signal.h>
+#include <pthread.h>
 #include <stdatomic.h>
 #include <string.h>
 #include <time.h>
@@ -25,6 +26,19 @@ _Static_assert(ATOMIC_INT_LOCK_FREE == 2, "crash admission requires always-lock-
 enum { CORLEX_DISABLED, CORLEX_EDITING, CORLEX_ARMED, CORLEX_HANDLING, CORLEX_EDIT_CANCELLED };
 static atomic_int gState = CORLEX_DISABLED;
 static atomic_int gInstalled = 0;
+
+int corlex_crash_prepare_thread_stack(void) {
+  // Only main may own this backing storage. Never share one alt stack between live threads.
+  if (!pthread_main_np()) return 0;
+  stack_t current;
+  if (sigaltstack(NULL, &current) != 0) return 0;
+  if (!(current.ss_flags & SS_DISABLE)) return 1; // Preserve an enabled host reporter/runtime stack.
+  stack_t alt;
+  memset(&alt, 0, sizeof(alt));
+  alt.ss_sp = gAltStack;
+  alt.ss_size = sizeof(gAltStack);
+  return sigaltstack(&alt, NULL) == 0;
+}
 
 static int index_of(int sig) {
   for (int i = 0; i < CORLEX_SIGNAL_COUNT; i++) {
@@ -175,12 +189,8 @@ int corlex_crash_install(const char *report_path, const char *header_prefix) {
   if (atomic_load_explicit(&gInstalled, memory_order_acquire)) return finish_install();
   corlex_crash_track_images();
 
-  // A stack overflow leaves no stack to run on: the handler gets its own (for this thread).
-  stack_t alt;
-  alt.ss_sp = gAltStack;
-  alt.ss_size = sizeof(gAltStack);
-  alt.ss_flags = 0;
-  sigaltstack(&alt, NULL);
+  // Wrappers prepare main before dispatching IO here. A worker must never claim its storage.
+  if (pthread_main_np()) (void)corlex_crash_prepare_thread_stack();
 
   struct sigaction action;
   memset(&action, 0, sizeof(action));

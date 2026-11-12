@@ -16,6 +16,11 @@ typedef struct {
   char name[64];     ///< File name of the image, without its directory.
 } corlex_image_t;
 
+/// Prepares only main's alternate signal stack, preserving an enabled host stack.
+/// Main-thread only (returns 0 on a worker). Does not install handlers, record a path or arm capture.
+/// Can run before consent, outside SDK locks, and independently of global handler installation.
+int corlex_crash_prepare_thread_stack(void);
+
 /// Installs the fatal-signal handlers. `report_path` is the file one crash is written to,
 /// `header_prefix` is the start of the JSON header line (an object text without its closing
 /// brace, ending with a comma). Both are copied. Returns 1 on success.

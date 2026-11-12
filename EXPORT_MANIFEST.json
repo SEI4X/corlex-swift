@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "bef425711f0ac79cb61fe24fe05c55a817270ac7f84ce3470242239f3080e6da",
-      "size": 2742
+      "sha256": "f0d5037474ba0fc3bcf8829a26d0c66f0bc86e8b50b1007e3703cef49a10a4ba",
+      "size": 2899
     },
     {
       "path": ".gitignore",
@@ -94,8 +94,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "f30dfe670337d510649368a59f5aa276381643fd19772d8055704387a9f5c990",
-      "size": 2793
+      "sha256": "a1beb63aeded6969e117a87f1ecd6ecefeb31c7cef095fd8c9cc8df39c317641",
+      "size": 3128
     },
     {
       "path": "SECURITY.md",
@@ -104,8 +104,8 @@
     },
     {
       "path": "Sources/CCorlexCrash/CorlexCrash.c",
-      "sha256": "0566fe5ad32fbfb643efbc57d4bd63f96f71ecbd3990c765729f8f34cadb62de",
-      "size": 8391
+      "sha256": "d7b2e58ce03ac29acb4837f801a13db1fb81936679702156606537cfa7873801",
+      "size": 8854
     },
     {
       "path": "Sources/CCorlexCrash/CorlexImages.c",
@@ -129,8 +129,8 @@
     },
     {
       "path": "Sources/CCorlexCrash/include/CorlexCrash.h",
-      "sha256": "797b456d4c7adba118e791b4e904bd7ff8f7a36a8cf9f59b1636a37b695067d4",
-      "size": 2083
+      "sha256": "7f1fc44bf5e0e6fc96a0b0b0e8a4029e878de5b157207767832bbb1b73355d07",
+      "size": 2412
     },
     {
       "path": "Sources/Corlex/Autocapture/CorlexScreen.swift",
@@ -164,8 +164,8 @@
     },
     {
       "path": "Sources/Corlex/Corlex.swift",
-      "sha256": "86b12acf7e8139b3741436fc27da4357a8dd8f6d71682f8e8af619696f02a5e4",
-      "size": 5877
+      "sha256": "e234aa82541f3382d0e2d050c272c227bdc001b6eca8e26ad1268c7a302bb547",
+      "size": 5987
     },
     {
       "path": "Sources/Corlex/CorlexConfig.swift",
@@ -193,6 +193,11 @@
       "size": 1772
     },
     {
+      "path": "Sources/Corlex/Crash/NativeCrashThreadStack.swift",
+      "sha256": "2caf41395ad5dd3d46c0ae4d0548840a922731576903b6b924b9d186c9b610af",
+      "size": 463
+    },
+    {
       "path": "Sources/Corlex/Internal/BoundTransport.swift",
       "sha256": "b388c0e7f831aa81e82c0cadaec03ea9ed6cc6802afbc5e75fba9bdffd7626eb",
       "size": 757
@@ -214,8 +219,8 @@
     },
     {
       "path": "Sources/Corlex/Internal/CorlexClient+Consent.swift",
-      "sha256": "48ad0722972120ad5f35ca248663bc3b40160db2f5eb0dc40a832495ec02b490",
-      "size": 5956
+      "sha256": "c2212b32752f8bae736e477182849c639abc8833e47b403956f9ea4746b2a481",
+      "size": 6058
     },
     {
       "path": "Sources/Corlex/Internal/CorlexClient.swift",
@@ -439,8 +444,8 @@
     },
     {
       "path": "Tests/Foundation/PlatformBoundaries.swift",
-      "sha256": "431c6e83975ddadde0f172239e1fd3efa8c2196860509fc327027fe7557bd245",
-      "size": 1577
+      "sha256": "5ec1c2a242867dacbb8e6c892eaad05ac3e4fdc7fb2ea52eb618778ab10dfe38",
+      "size": 1711
     },
     {
       "path": "Tests/Native/rearm.test.c",
@@ -448,9 +453,19 @@
       "size": 3663
     },
     {
+      "path": "Tests/NativeAltStack/main.c",
+      "sha256": "b27bb3a510f2453070b697749c09b11f36daf9a1a7d3c6fc89cb4629556c87f2",
+      "size": 2093
+    },
+    {
       "path": "Tests/NativeException/main.swift",
       "sha256": "7b0b5300747e7803f9041dec201804f11ce0676395cca478806b6827767740a8",
       "size": 1172
+    },
+    {
+      "path": "Tests/NativeThreadStack/main.swift",
+      "sha256": "0552621031caebebf3496ff885e2d537212882a623000ec297cd0f8d38391dfc",
+      "size": 1966
     },
     {
       "path": "Tests/NativeWriter/main.swift",
@@ -528,6 +543,11 @@
       "size": 3154
     },
     {
+      "path": "Tools/test-altstack.sh",
+      "sha256": "26a9230fa9cb2165e427573fff19175dd8bd939f595b1d3c8ac822ae9bd79e03",
+      "size": 481
+    },
+    {
       "path": "Tools/test-client.sh",
       "sha256": "e8b176712ce59c86386590a9e837b3ad96b1c34903aad8ce20a01502f4d8f466",
       "size": 1365
@@ -546,6 +566,11 @@
       "path": "Tools/test-crash-writer.sh",
       "sha256": "0ac3b6e4bd430dc7d3254b807525bff066638b5a3187b752de7ae1ce9919165a",
       "size": 1315
+    },
+    {
+      "path": "Tools/test-thread-stack.sh",
+      "sha256": "d5beba1acef91c6bd2326576d5ebf127dc9d8f486d0dbfa751e75727ea14b106",
+      "size": 780
     },
     {
       "path": "Tools/test-transport.sh",
@@ -584,8 +609,8 @@
     },
     {
       "path": "docs/runtime.cdx.json",
-      "sha256": "213f78fc5df60837df2b7de7544d4961eb49830714902bd6e868fd61aa0021c7",
-      "size": 2164
+      "sha256": "437a640f9ff7d1607e7c3a02da24978aae3e1654c1a5b6bca4419477f51767a4",
+      "size": 2196
     },
     {
       "path": "scripts/check-privacy.py",

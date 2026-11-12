@@ -27,3 +27,7 @@ final class CrashReporter {
     func disable(deleteReports: Bool) { fatalError("Foundation suite entered native crash capture") }
     func takePending(storage: Storage, captureErrorMessages: Bool = false) -> [CapturedCrash] { fatalError("Foundation suite entered native crash recovery") }
 }
+
+enum NativeCrashThreadStack {
+    static func prepare() { fatalError("Foundation suite entered native thread stack preparation") }
+}
