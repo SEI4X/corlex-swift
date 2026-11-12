@@ -22,6 +22,8 @@ jobs:
         run: |
           sdk_simulator_id=$(xcrun simctl list devices available -j | python3 -c 'import json,sys; d=json.load(sys.stdin)["devices"]; p=[v["udid"] for k,vs in d.items() if ".iOS-" in k for v in vs if v["name"].startswith("iPhone")]; assert p,"No iOS simulator installed"; print(p[-1])')
           echo "SDK_SIMULATOR_ID=$sdk_simulator_id" >> "$GITHUB_ENV"
+      - name: Boot the test simulator and wait for readiness
+        run: xcrun simctl bootstatus "$SDK_SIMULATOR_ID" -b
       - name: Run the complete SDK tests on iOS
         run: xcodebuild test -scheme Corlex -destination "platform=iOS Simulator,id=$SDK_SIMULATOR_ID" -parallel-testing-enabled NO -derivedDataPath "$RUNNER_TEMP/corlex-sdk" -resultBundlePath "$RUNNER_TEMP/corlex-sdk.xcresult" -quiet
       - name: Report test failure details
