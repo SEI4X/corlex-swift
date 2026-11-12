@@ -33,41 +33,6 @@
       "size": 753
     },
     {
-      "path": "docs/API.md",
-      "sha256": "25a076c2300313dca4fc49d83adeba48ce560b58336874efd4692a856e7485f4",
-      "size": 2928
-    },
-    {
-      "path": "docs/CONSENT-AND-DATA.md",
-      "sha256": "e4b5341771fe02425b7f26b93f241701706a1ae7bf85bef9a03e341998b415bf",
-      "size": 1257
-    },
-    {
-      "path": "docs/CRASHES.md",
-      "sha256": "8870d828e3f57659a459bfae906aaae092d07fa7fa8ed142aeb0a82f14db9a86",
-      "size": 980
-    },
-    {
-      "path": "docs/LOCAL-STORAGE.md",
-      "sha256": "253ff420398d2e4354adca28ca876293b990e53b81f4cd455f1d46b6570ccbc8",
-      "size": 1337
-    },
-    {
-      "path": "docs/PUBLISHING.md",
-      "sha256": "184df9be1c5a8828ba83f118a673d25f2aa1c3c2cda777eb8c9fb7a68fc7f9f7",
-      "size": 953
-    },
-    {
-      "path": "docs/runtime.cdx.json",
-      "sha256": "87f3c8e91bab97109eda3005315194b4288a3fa25a35e4bac26a47324670f683",
-      "size": 1910
-    },
-    {
-      "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "94a81f4f5774c60b7700649bb54eef7ca5c2b42bb24f70add412097eb8970039",
-      "size": 1088
-    },
-    {
       "path": "Example/CorlexExample.xcodeproj/project.pbxproj",
       "sha256": "492c1c7e90f86a5838275f188945e828f1a4fa72d4cb0bbe194041ad4491319e",
       "size": 14983
@@ -131,21 +96,6 @@
       "path": "README.md",
       "sha256": "f30dfe670337d510649368a59f5aa276381643fd19772d8055704387a9f5c990",
       "size": 2793
-    },
-    {
-      "path": "scripts/check-privacy.py",
-      "sha256": "b2c6daa5c21e4bc81fded6f8aabd4efef3bdb4e4f8f10f30ea9da81b848d254c",
-      "size": 2322
-    },
-    {
-      "path": "scripts/upload-symbols.sh",
-      "sha256": "f6b319befe3a502917bfe33d9a949164a90e1c393a7603c151453c7d4ffa7075",
-      "size": 4595
-    },
-    {
-      "path": "scripts/with-symbols.sh",
-      "sha256": "ef2fcf20aeccbf84b86e40e0249f80c8f1558e6bc63935f8bc9fbb58bf78052a",
-      "size": 652
     },
     {
       "path": "SECURITY.md",
@@ -228,14 +178,14 @@
       "size": 3381
     },
     {
-      "path": "Sources/Corlex/Crash/CrashReporter.swift",
-      "sha256": "d777692ea1800a1838724f9bdcded885aa0f0c82c10b64d24fe4fce2601b677f",
-      "size": 7085
-    },
-    {
       "path": "Sources/Corlex/Crash/CrashReportReader.swift",
       "sha256": "41a72af9e360c7568e107b1142377db0c7f5879bc2d022da929b980b403dc1d6",
       "size": 3884
+    },
+    {
+      "path": "Sources/Corlex/Crash/CrashReporter.swift",
+      "sha256": "d777692ea1800a1838724f9bdcded885aa0f0c82c10b64d24fe4fce2601b677f",
+      "size": 7085
     },
     {
       "path": "Sources/Corlex/Crash/NativeCrashPrivacy.swift",
@@ -258,11 +208,6 @@
       "size": 1742
     },
     {
-      "path": "Sources/Corlex/Internal/CorlexClient.swift",
-      "sha256": "2a8e1869da2c9a0244121676458c5fbabd5e230f31ead61e422697e4de7597e5",
-      "size": 9595
-    },
-    {
       "path": "Sources/Corlex/Internal/CorlexClient+Config.swift",
       "sha256": "c975c4d8d37caaab1004f2128ddcaae301e3d636977cae567ae046465ee653cc",
       "size": 3033
@@ -271,6 +216,11 @@
       "path": "Sources/Corlex/Internal/CorlexClient+Consent.swift",
       "sha256": "48ad0722972120ad5f35ca248663bc3b40160db2f5eb0dc40a832495ec02b490",
       "size": 5956
+    },
+    {
+      "path": "Sources/Corlex/Internal/CorlexClient.swift",
+      "sha256": "2a8e1869da2c9a0244121676458c5fbabd5e230f31ead61e422697e4de7597e5",
+      "size": 9595
     },
     {
       "path": "Sources/Corlex/Internal/DeviceInfo.swift",
@@ -329,8 +279,8 @@
     },
     {
       "path": "Sources/Corlex/Internal/Storage.swift",
-      "sha256": "520baba79e3137d845008ab3cde332773a0d7e005c182245cf6410e8d618eccd",
-      "size": 5527
+      "sha256": "84efe5000323b36bef9ab028ea39e5281b2b64d178a1a564a49c6e4d78fd229f",
+      "size": 5581
     },
     {
       "path": "Sources/Corlex/Internal/StorageBinding.swift",
@@ -354,8 +304,8 @@
     },
     {
       "path": "Sources/Corlex/Resources/PrivacyInfo.xcprivacy",
-      "sha256": "8af044a7bbc9e33ed6fda8f2491c56ad5deea34bc1fd984027acdb0a9154c377",
-      "size": 1942
+      "sha256": "5bf83f282245222ee0287857020f3aa9e4ee93d32061cc6ab4c6555e4ee140aa",
+      "size": 2159
     },
     {
       "path": "Tests/CorlexTests/AttBindingTests.swift",
@@ -533,11 +483,6 @@
       "size": 2645
     },
     {
-      "path": "Tools/Sources/corlex-symtab/main.swift",
-      "sha256": "f184e12edbf5ee434d81a003610d5ca6628ff8b275087a38d8245a05f0772dc7",
-      "size": 1467
-    },
-    {
       "path": "Tools/Sources/corlex-symtab/ProcessRunner.swift",
       "sha256": "ccf181d7e372da2b903bf65bc068e58744a6d162a88d0a3c8422f62f2e3b4994",
       "size": 2357
@@ -551,6 +496,36 @@
       "path": "Tools/Sources/corlex-symtab/SymtabBuilder.swift",
       "sha256": "1da283b326e5da169910d604690d42acf2d396717ee4ce92c7ca3ecbb94933d6",
       "size": 3579
+    },
+    {
+      "path": "Tools/Sources/corlex-symtab/main.swift",
+      "sha256": "f184e12edbf5ee434d81a003610d5ca6628ff8b275087a38d8245a05f0772dc7",
+      "size": 1467
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/EndToEndTests.swift",
+      "sha256": "8d32e4dfc40ad8bb1bfc8596271b8be2c575b41ff7bc89353387bc186ded289e",
+      "size": 5308
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/ExampleAppTests.swift",
+      "sha256": "95c14704f4a0bd1724a0dfc7e6d7260988b7bcac183eaacc04d580f9dc8d00d4",
+      "size": 3406
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/Fixtures/Paywall.swift",
+      "sha256": "9cf58c9f96bf60fcd9a058d14ffee8ba1ee0c139652e2e487450f26a011d2cd6",
+      "size": 680
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/ParserTests.swift",
+      "sha256": "e8d8a23fc005b3317e14221ba73847476e9f5b186b9cafa68c30467ab4766f47",
+      "size": 8386
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/ReferenceSymtab.swift",
+      "sha256": "f7a9a8f4ef02cbcae32da9d26607a24c5600790039b64c7bbc2e76020ca17b4d",
+      "size": 3154
     },
     {
       "path": "Tools/test-client.sh",
@@ -578,29 +553,54 @@
       "size": 2416
     },
     {
-      "path": "Tools/Tests/CorlexSymtabTests/EndToEndTests.swift",
-      "sha256": "8d32e4dfc40ad8bb1bfc8596271b8be2c575b41ff7bc89353387bc186ded289e",
-      "size": 5308
+      "path": "docs/API.md",
+      "sha256": "25a076c2300313dca4fc49d83adeba48ce560b58336874efd4692a856e7485f4",
+      "size": 2928
     },
     {
-      "path": "Tools/Tests/CorlexSymtabTests/ExampleAppTests.swift",
-      "sha256": "95c14704f4a0bd1724a0dfc7e6d7260988b7bcac183eaacc04d580f9dc8d00d4",
-      "size": 3406
+      "path": "docs/CONSENT-AND-DATA.md",
+      "sha256": "e4b5341771fe02425b7f26b93f241701706a1ae7bf85bef9a03e341998b415bf",
+      "size": 1257
     },
     {
-      "path": "Tools/Tests/CorlexSymtabTests/Fixtures/Paywall.swift",
-      "sha256": "9cf58c9f96bf60fcd9a058d14ffee8ba1ee0c139652e2e487450f26a011d2cd6",
-      "size": 680
+      "path": "docs/CRASHES.md",
+      "sha256": "8870d828e3f57659a459bfae906aaae092d07fa7fa8ed142aeb0a82f14db9a86",
+      "size": 980
     },
     {
-      "path": "Tools/Tests/CorlexSymtabTests/ParserTests.swift",
-      "sha256": "e8d8a23fc005b3317e14221ba73847476e9f5b186b9cafa68c30467ab4766f47",
-      "size": 8386
+      "path": "docs/LOCAL-STORAGE.md",
+      "sha256": "253ff420398d2e4354adca28ca876293b990e53b81f4cd455f1d46b6570ccbc8",
+      "size": 1337
     },
     {
-      "path": "Tools/Tests/CorlexSymtabTests/ReferenceSymtab.swift",
-      "sha256": "f7a9a8f4ef02cbcae32da9d26607a24c5600790039b64c7bbc2e76020ca17b4d",
-      "size": 3154
+      "path": "docs/PUBLISHING.md",
+      "sha256": "184df9be1c5a8828ba83f118a673d25f2aa1c3c2cda777eb8c9fb7a68fc7f9f7",
+      "size": 953
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "sha256": "94a81f4f5774c60b7700649bb54eef7ca5c2b42bb24f70add412097eb8970039",
+      "size": 1088
+    },
+    {
+      "path": "docs/runtime.cdx.json",
+      "sha256": "213f78fc5df60837df2b7de7544d4961eb49830714902bd6e868fd61aa0021c7",
+      "size": 2164
+    },
+    {
+      "path": "scripts/check-privacy.py",
+      "sha256": "aa38c2528578a7a2b3602a1a1d71305a4c266fe856cd578e619b873c865bf1cc",
+      "size": 2331
+    },
+    {
+      "path": "scripts/upload-symbols.sh",
+      "sha256": "f6b319befe3a502917bfe33d9a949164a90e1c393a7603c151453c7d4ffa7075",
+      "size": 4595
+    },
+    {
+      "path": "scripts/with-symbols.sh",
+      "sha256": "ef2fcf20aeccbf84b86e40e0249f80c8f1558e6bc63935f8bc9fbb58bf78052a",
+      "size": 652
     }
   ]
 }

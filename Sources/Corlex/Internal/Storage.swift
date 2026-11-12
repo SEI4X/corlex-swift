@@ -1,9 +1,9 @@
 import Foundation
 
 /// The folder the SDK keeps its files in: `Application Support/Corlex`. Files, not
-/// `UserDefaults`: the SDK then touches none of the "required reason" APIs and can say exactly
-/// what it wrote. The folder is excluded from backups (a restored anonymous id would put two
-/// devices under one person).
+/// `UserDefaults`: the SDK can describe exactly what it wrote. OwnerChoices separately declares
+/// its fstat file-metadata check under the own-container C617.1 reason. The folder is excluded
+/// from backups: a restored anonymous id would put two devices under one person.
 struct Storage {
     let directory: URL
     let scope: StorageScope?

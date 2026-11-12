@@ -36,7 +36,7 @@ def check_manifest(path, platform, canonical=None):
     rows = common(document)
     reasons = document.get('NSPrivacyAccessedAPITypes', [])
     expected = [{'NSPrivacyAccessedAPIType': 'NSPrivacyAccessedAPICategoryFileTimestamp',
-                 'NSPrivacyAccessedAPITypeReasons': ['C617.1']}] if platform == 'flutter' else []
+                 'NSPrivacyAccessedAPITypeReasons': ['C617.1']}] if platform in {'ios', 'flutter'} else []
     assert reasons == expected, 'Required-reason declarations must match the actual platform APIs'
     if canonical is not None:
         assert rows == common(load(canonical)), 'Shared collection declarations differ'

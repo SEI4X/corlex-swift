@@ -24,7 +24,7 @@
       },
       {
         "name": "corlex:sdk-source-tree:sha1",
-        "value": "ec31ab544bc84fca33039793238b8a50ee96e3e0"
+        "value": "23d2df127b8a36a8563d8dfc62f1acc41540fe93"
       },
       {
         "name": "corlex:sdk-package-manifest:sha256",
@@ -45,6 +45,10 @@
       {
         "name": "corlex:validation",
         "value": "SDK and Tools swift package dump-package dependencies[]; full iOS134/134, failures0/skips0;76 exact client/ledger and59 Foundation/transport tests; ASan writer4 modes and fresh-process exception passed. Standalone public-source/hosted checks remain required before release."
+      },
+      {
+        "name": "corlex:required-reason-file-metadata",
+        "value": "FileTimestamp C617.1: OwnerChoices invokes fstat only for regular-file validation in the SDK app-container privacy store; metadata is not collected as telemetry."
       }
     ]
   },
