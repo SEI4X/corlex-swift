@@ -1,0 +1,606 @@
+{
+  "version": 1,
+  "repository": "corlex-swift",
+  "files": [
+    {
+      "path": ".github/pull_request_template.md",
+      "sha256": "f43fd39eadbf93e6549bfc57cfe13dd3b80eaedc0ff93d41049410dc04dcfeb7",
+      "size": 150
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "ea69a351ef3667a4f4ead68e2224394a93e32e0f3b6d38d218f7e67022c1b365",
+      "size": 2621
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "4b76fd7dba00a9b11c15ddf939e760eaaf38fac1e567acede353aa3095edcad3",
+      "size": 194
+    },
+    {
+      "path": ".gitleaks.toml",
+      "sha256": "4e659609f25bc15527341590a557f2428baabbd8aed13915cc706a96888c7e19",
+      "size": 631
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "9b9d3a0bc7f6e7a6464b9b14a8d13ab85702ab668b8e93b7bef282c399a444f3",
+      "size": 295
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "c3a7fa935cf81573a326afb857557326a978cfb010b82b4117d21cbfa5a78671",
+      "size": 753
+    },
+    {
+      "path": "docs/API.md",
+      "sha256": "25a076c2300313dca4fc49d83adeba48ce560b58336874efd4692a856e7485f4",
+      "size": 2928
+    },
+    {
+      "path": "docs/CONSENT-AND-DATA.md",
+      "sha256": "e4b5341771fe02425b7f26b93f241701706a1ae7bf85bef9a03e341998b415bf",
+      "size": 1257
+    },
+    {
+      "path": "docs/CRASHES.md",
+      "sha256": "8870d828e3f57659a459bfae906aaae092d07fa7fa8ed142aeb0a82f14db9a86",
+      "size": 980
+    },
+    {
+      "path": "docs/LOCAL-STORAGE.md",
+      "sha256": "253ff420398d2e4354adca28ca876293b990e53b81f4cd455f1d46b6570ccbc8",
+      "size": 1337
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "sha256": "184df9be1c5a8828ba83f118a673d25f2aa1c3c2cda777eb8c9fb7a68fc7f9f7",
+      "size": 953
+    },
+    {
+      "path": "docs/runtime.cdx.json",
+      "sha256": "87f3c8e91bab97109eda3005315194b4288a3fa25a35e4bac26a47324670f683",
+      "size": 1910
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "sha256": "94a81f4f5774c60b7700649bb54eef7ca5c2b42bb24f70add412097eb8970039",
+      "size": 1088
+    },
+    {
+      "path": "Example/CorlexExample.xcodeproj/project.pbxproj",
+      "sha256": "492c1c7e90f86a5838275f188945e828f1a4fa72d4cb0bbe194041ad4491319e",
+      "size": 14983
+    },
+    {
+      "path": "Example/CorlexExample.xcodeproj/xcshareddata/xcschemes/CorlexExample.xcscheme",
+      "sha256": "3441c196f57969f04110c453a77e02f734670b39978b2ca1508f5f2350ff1877",
+      "size": 3269
+    },
+    {
+      "path": "Example/CorlexExample/CorlexExampleApp.swift",
+      "sha256": "6b5b59ba52076da2bb20180ed3453eb50b261f575a2e2113a5c8cfb3d2e2c330",
+      "size": 1010
+    },
+    {
+      "path": "Example/CorlexExample/CrashLab.swift",
+      "sha256": "0d99afc43014c9664640b8b28f999eaed21a9b28f56e68259f47ce7b13e5cc8e",
+      "size": 1578
+    },
+    {
+      "path": "Example/CorlexExample/Info.plist",
+      "sha256": "f3cbb42f17ea11eb6217666e7258c677fd968cd6df4248d0f245c187df8b6193",
+      "size": 370
+    },
+    {
+      "path": "Example/CorlexExample/PrivacyView.swift",
+      "sha256": "0fd1eba2c7004d9583e2dd165a25cea9775d270985ad21da9b7a78fc7df9d633",
+      "size": 1142
+    },
+    {
+      "path": "Example/CorlexExample/RootView.swift",
+      "sha256": "eb6030fd77f893d41de5455ec70a5294fd0983f438f5c0f7b225299add655a04",
+      "size": 2969
+    },
+    {
+      "path": "Example/generate-project.rb",
+      "sha256": "459919213cfdd1e7d1a24baff1527c07993b37dac1368f48dbc0ff35e354d67e",
+      "size": 2844
+    },
+    {
+      "path": "Example/stub-ingest.py",
+      "sha256": "d70f1f85db8dbcb3a41882e02c33e16d1f0667f71450f7c9d165ff68c923a6fb",
+      "size": 2939
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0596a484c067a63b693813f9e92179195dc87097ff1ad6e500d9c3f2de0c5919",
+      "size": 1075
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "cf265d930417cd098fc4b8ca29c428c1df30d0c00fa5ddeb57afdef4dfc1e834",
+      "size": 142
+    },
+    {
+      "path": "Package.swift",
+      "sha256": "307828ddd2784a1017506bc3191b5c7ed131f4fa0947d38478771a1a1ba6a43d",
+      "size": 834
+    },
+    {
+      "path": "README.md",
+      "sha256": "f30dfe670337d510649368a59f5aa276381643fd19772d8055704387a9f5c990",
+      "size": 2793
+    },
+    {
+      "path": "scripts/check-privacy.py",
+      "sha256": "b2c6daa5c21e4bc81fded6f8aabd4efef3bdb4e4f8f10f30ea9da81b848d254c",
+      "size": 2322
+    },
+    {
+      "path": "scripts/upload-symbols.sh",
+      "sha256": "f6b319befe3a502917bfe33d9a949164a90e1c393a7603c151453c7d4ffa7075",
+      "size": 4595
+    },
+    {
+      "path": "scripts/with-symbols.sh",
+      "sha256": "ef2fcf20aeccbf84b86e40e0249f80c8f1558e6bc63935f8bc9fbb58bf78052a",
+      "size": 652
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "d1549bcbb02d998a112c3016c0fd9df7870b7fe44529847d1b72526447196330",
+      "size": 452
+    },
+    {
+      "path": "Sources/CCorlexCrash/CorlexCrash.c",
+      "sha256": "0566fe5ad32fbfb643efbc57d4bd63f96f71ecbd3990c765729f8f34cadb62de",
+      "size": 8391
+    },
+    {
+      "path": "Sources/CCorlexCrash/CorlexImages.c",
+      "sha256": "7829173b3995e1062fd9fb7d8870faf468d8c977db68c371f1989f5a7ac16110",
+      "size": 2814
+    },
+    {
+      "path": "Sources/CCorlexCrash/CorlexInternal.h",
+      "sha256": "87b32db8b84dbf81a0268570bb583b2828e39455f292f1281547a060b14b1562",
+      "size": 703
+    },
+    {
+      "path": "Sources/CCorlexCrash/CorlexOutput.c",
+      "sha256": "ab3282150b0835b85163797a8f70837efd94bb9eaadb3f7620c1eee37bb44580",
+      "size": 1174
+    },
+    {
+      "path": "Sources/CCorlexCrash/CorlexStack.c",
+      "sha256": "d325777fd9c1b7aadeb9f2c4626ebef4441ae1548f1300668b5b5c6af312ae5c",
+      "size": 2358
+    },
+    {
+      "path": "Sources/CCorlexCrash/include/CorlexCrash.h",
+      "sha256": "797b456d4c7adba118e791b4e904bd7ff8f7a36a8cf9f59b1636a37b695067d4",
+      "size": 2083
+    },
+    {
+      "path": "Sources/Corlex/Autocapture/CorlexScreen.swift",
+      "sha256": "a1e8edf4e642dc85845cd86763371e2c9a4fe597a6dfd159f97e654cc5acb2a0",
+      "size": 721
+    },
+    {
+      "path": "Sources/Corlex/Autocapture/Lifecycle.swift",
+      "sha256": "037c3543fd0d0605b6ceaea85a901aa43c6bc50040de4985ddbc63e81ea79cd3",
+      "size": 2542
+    },
+    {
+      "path": "Sources/Corlex/Autocapture/ScreenTracker.swift",
+      "sha256": "c5343f2c9278c1eac24fbd682743c699f1d480744b5e4329283376ba65765f00",
+      "size": 3044
+    },
+    {
+      "path": "Sources/Corlex/Config/ConfigEvaluator.swift",
+      "sha256": "80e6760073662ba9078ae9fe6baed33775f0e21fcd3942f99565ed1863cdeb2f",
+      "size": 5113
+    },
+    {
+      "path": "Sources/Corlex/Config/ConfigValidation.swift",
+      "sha256": "e9975e33fc70bc7e6d1d8de4f4472acd561b20dcebed15204eb8950aa3dba347",
+      "size": 4127
+    },
+    {
+      "path": "Sources/Corlex/Config/RemoteConfig.swift",
+      "sha256": "a35fde37b3b77a405cc4652c14fb1711a6f837fd95f823645f62fe97d3a9bb03",
+      "size": 8197
+    },
+    {
+      "path": "Sources/Corlex/Corlex.swift",
+      "sha256": "86b12acf7e8139b3741436fc27da4357a8dd8f6d71682f8e8af619696f02a5e4",
+      "size": 5877
+    },
+    {
+      "path": "Sources/Corlex/CorlexConfig.swift",
+      "sha256": "4bc21a71717bafd009f41144089588487f16c7f53d6bde386d5ee9581f09b236",
+      "size": 3685
+    },
+    {
+      "path": "Sources/Corlex/CorlexOptions.swift",
+      "sha256": "157ed98e7bc2fe5a1f4cc86a69e7c3d229e6a5ef658211f27ce03a6ee540b0d3",
+      "size": 3381
+    },
+    {
+      "path": "Sources/Corlex/Crash/CrashReporter.swift",
+      "sha256": "d777692ea1800a1838724f9bdcded885aa0f0c82c10b64d24fe4fce2601b677f",
+      "size": 7085
+    },
+    {
+      "path": "Sources/Corlex/Crash/CrashReportReader.swift",
+      "sha256": "41a72af9e360c7568e107b1142377db0c7f5879bc2d022da929b980b403dc1d6",
+      "size": 3884
+    },
+    {
+      "path": "Sources/Corlex/Crash/NativeCrashPrivacy.swift",
+      "sha256": "7fdde316caedc5e350a738640f26030f453028b828c750b0478f3dc54396796a",
+      "size": 1772
+    },
+    {
+      "path": "Sources/Corlex/Internal/BoundTransport.swift",
+      "sha256": "b388c0e7f831aa81e82c0cadaec03ea9ed6cc6802afbc5e75fba9bdffd7626eb",
+      "size": 757
+    },
+    {
+      "path": "Sources/Corlex/Internal/ClientBinding.swift",
+      "sha256": "4a8e745e89e5e82b7fc5ab538a85cf4af3ecdb5a5ed1ac619ed0b0e92e713313",
+      "size": 8001
+    },
+    {
+      "path": "Sources/Corlex/Internal/ClientEnvironment.swift",
+      "sha256": "de41b5515f3d8bfadc3424c7dbcc9abbfe0d768a1fdc2d71c33534a62a191ea2",
+      "size": 1742
+    },
+    {
+      "path": "Sources/Corlex/Internal/CorlexClient.swift",
+      "sha256": "2a8e1869da2c9a0244121676458c5fbabd5e230f31ead61e422697e4de7597e5",
+      "size": 9595
+    },
+    {
+      "path": "Sources/Corlex/Internal/CorlexClient+Config.swift",
+      "sha256": "c975c4d8d37caaab1004f2128ddcaae301e3d636977cae567ae046465ee653cc",
+      "size": 3033
+    },
+    {
+      "path": "Sources/Corlex/Internal/CorlexClient+Consent.swift",
+      "sha256": "48ad0722972120ad5f35ca248663bc3b40160db2f5eb0dc40a832495ec02b490",
+      "size": 5956
+    },
+    {
+      "path": "Sources/Corlex/Internal/DeviceInfo.swift",
+      "sha256": "cac91ae2aa44fdd39f3ddbbfcc19922edc8f9260a4598895d60a8d2a5d79030c",
+      "size": 2181
+    },
+    {
+      "path": "Sources/Corlex/Internal/EndpointPolicy.swift",
+      "sha256": "47ab908dfee410dc3856bf1417100701fc39b9e80ef20f25c218fddde60f03f0",
+      "size": 1337
+    },
+    {
+      "path": "Sources/Corlex/Internal/EventQueue.swift",
+      "sha256": "3dd4645ca3f42f4f1bf133a3f71fe7969497a4e58bc29a473874c235b75b6bac",
+      "size": 4519
+    },
+    {
+      "path": "Sources/Corlex/Internal/Identity.swift",
+      "sha256": "2b8209c24a2d4e0e7522b990e91c1cee34343a63a4f722f1b4ed323ec321e38c",
+      "size": 2127
+    },
+    {
+      "path": "Sources/Corlex/Internal/JSONValue.swift",
+      "sha256": "c1c4c9263a8f16c658cde438d05822bb5c93fc741e41b02f207fac2499fb3597",
+      "size": 3460
+    },
+    {
+      "path": "Sources/Corlex/Internal/Limits.swift",
+      "sha256": "c2d9cc7d341848da65928e6e5a5effcd9e06b1761e27ec3cf6350e3409bbef88",
+      "size": 2179
+    },
+    {
+      "path": "Sources/Corlex/Internal/OwnerChoices.swift",
+      "sha256": "6081824ea0367b4c8f13e5f8141e210ef3710aaecb39a96fbaeab357a01fe56d",
+      "size": 3541
+    },
+    {
+      "path": "Sources/Corlex/Internal/PrivacyFence.swift",
+      "sha256": "9c0acc8347beaa57a3d5e675d7d59c2f4ee9e348058ea7c4c84338cb64ad721d",
+      "size": 1504
+    },
+    {
+      "path": "Sources/Corlex/Internal/PrivacyLedger.swift",
+      "sha256": "c4f962c6469e072d20768e7199bce5837c8473cb5b3f529c7d39bcc25329a70d",
+      "size": 11762
+    },
+    {
+      "path": "Sources/Corlex/Internal/PropertySanitizer.swift",
+      "sha256": "d6a81795ac3500bb6c69e5d95e71d5b7a8737edd523137a008bd83a09dfd0a06",
+      "size": 2837
+    },
+    {
+      "path": "Sources/Corlex/Internal/Sender.swift",
+      "sha256": "97c54c631f7ee473fec020efed150e86e69f4a82eb22a79c6117e36a27c01c5c",
+      "size": 6404
+    },
+    {
+      "path": "Sources/Corlex/Internal/Storage.swift",
+      "sha256": "520baba79e3137d845008ab3cde332773a0d7e005c182245cf6410e8d618eccd",
+      "size": 5527
+    },
+    {
+      "path": "Sources/Corlex/Internal/StorageBinding.swift",
+      "sha256": "f70a13ff7850b4fbde8ed41c39824869335dd131b28de4f0950994695db955b8",
+      "size": 1745
+    },
+    {
+      "path": "Sources/Corlex/Internal/StorageScope.swift",
+      "sha256": "3effa9afc15f1f206e38bab444b9919195c53a240742c961c42439b2dea71594",
+      "size": 1140
+    },
+    {
+      "path": "Sources/Corlex/Internal/Transport.swift",
+      "sha256": "707d906e19be37fe9b0c71624cfa26236f68db0c2a79bb04bc1bcc229a939033",
+      "size": 6264
+    },
+    {
+      "path": "Sources/Corlex/Internal/WireEvent.swift",
+      "sha256": "18f9af79141ebe6248376e53420255c5f1aca9f89d07c912e96956474b2acdfc",
+      "size": 1365
+    },
+    {
+      "path": "Sources/Corlex/Resources/PrivacyInfo.xcprivacy",
+      "sha256": "8af044a7bbc9e33ed6fda8f2491c56ad5deea34bc1fd984027acdb0a9154c377",
+      "size": 1942
+    },
+    {
+      "path": "Tests/CorlexTests/AttBindingTests.swift",
+      "sha256": "610d1858ff7bd381e8fcecf22e8b10fd56aade66ac2e31539abf50ad17b0197d",
+      "size": 4393
+    },
+    {
+      "path": "Tests/CorlexTests/AutocaptureTests.swift",
+      "sha256": "3d5be72be24629dc74c69079cada9c966eaa4a2147052ad7cb09befbaf2deba7",
+      "size": 5371
+    },
+    {
+      "path": "Tests/CorlexTests/BindingLifecycleTests.swift",
+      "sha256": "919fa25367dd13d1dacf67036b655833ac8ec8b23df6f6cbcc3bdc71759e428a",
+      "size": 5382
+    },
+    {
+      "path": "Tests/CorlexTests/BucketVectorsTests.swift",
+      "sha256": "54a6fdb99d1a38276d08c4bd77688bb5324da7b8f648a951e635486c1f213de2",
+      "size": 4052
+    },
+    {
+      "path": "Tests/CorlexTests/ClientBindingTests.swift",
+      "sha256": "824d0e9a2ed1d2cf45941bf81679eee8445cc253e0fe01fe0afb8f6c4aafe093",
+      "size": 5349
+    },
+    {
+      "path": "Tests/CorlexTests/ClientTests.swift",
+      "sha256": "a33893699daaf3c00be997c0bb5ad8ecadf2385f96e57cee550c2d82a68d6932",
+      "size": 7863
+    },
+    {
+      "path": "Tests/CorlexTests/ConfigSecurityTests.swift",
+      "sha256": "06626685c6bc9662a8c7c32c24c0a1f41d22044ff1e839ed299b6122b56b28db",
+      "size": 10278
+    },
+    {
+      "path": "Tests/CorlexTests/CrashReportTests.swift",
+      "sha256": "a45a770e939c04aca7c8775c07b6a815a6b80efc66aa79c06d91b252ae45211d",
+      "size": 9264
+    },
+    {
+      "path": "Tests/CorlexTests/DeferredFacadeTransport.swift",
+      "sha256": "e598ea0bee257d1b4bc8f33802c7fe3e6b7cfa12a62ec6353f08652c1d412b62",
+      "size": 1112
+    },
+    {
+      "path": "Tests/CorlexTests/DiagnosticsPrivacyTests.swift",
+      "sha256": "4e0389af4702b93b0a1eee477a75a749889c92210e80867420f009a2aa237d5d",
+      "size": 1454
+    },
+    {
+      "path": "Tests/CorlexTests/EndpointPolicyTests.swift",
+      "sha256": "492655d5ecd8e20b74ee0c21319ecf5c103d4b13e876566cbeb7ffa9b226fe05",
+      "size": 2462
+    },
+    {
+      "path": "Tests/CorlexTests/Fixtures/remote-config.json",
+      "sha256": "895f8b9a105a49a154d1b246a4cb7907c0948c9126bfbff890182b2f6c128199",
+      "size": 29715
+    },
+    {
+      "path": "Tests/CorlexTests/ImmediateDenialTests.swift",
+      "sha256": "18b463137e49f4b7b8fa03ed6b8629466b5cecf4b338aac4275212af896ab058",
+      "size": 4644
+    },
+    {
+      "path": "Tests/CorlexTests/NativeCrashPrivacyTests.swift",
+      "sha256": "e0e322567b316fb3e40bf979b93083e954cf5865f026052e4ae2e5a3f3658e09",
+      "size": 2468
+    },
+    {
+      "path": "Tests/CorlexTests/OwnerChoiceStorageTests.swift",
+      "sha256": "747b056eac30480882ebd81ee938528134f5145a16ff231a3a9d67f9a0c45ed7",
+      "size": 3281
+    },
+    {
+      "path": "Tests/CorlexTests/OwnerChoiceTests.swift",
+      "sha256": "e0fcf75f22b1e94e8124552389b6c74bf673f63f8ecebe4516c7e5dc5393b868",
+      "size": 7571
+    },
+    {
+      "path": "Tests/CorlexTests/PrivacyCeilingTests.swift",
+      "sha256": "ee5b74b689d58489981c6ff0d5bed54c48c69450d7011d9705a0043235893750",
+      "size": 5568
+    },
+    {
+      "path": "Tests/CorlexTests/PrivacyLedgerTests.swift",
+      "sha256": "bdb605dcfdb5f8b22fad78d0a037fdc58744db58bee2a4bdc93a60081e17a9c8",
+      "size": 7026
+    },
+    {
+      "path": "Tests/CorlexTests/QueueAndSanitizerTests.swift",
+      "sha256": "c8cf6cb53bf43695ab1356a7d0e02c52d850676beb6ff69ce14b5e293fecd15f",
+      "size": 6422
+    },
+    {
+      "path": "Tests/CorlexTests/RemoteConfigTests.swift",
+      "sha256": "49d740d33a1c6d09cf940b2263afa95aa5e09931b1babbe6b006cbac995c87cc",
+      "size": 7696
+    },
+    {
+      "path": "Tests/CorlexTests/ScopedStorageTests.swift",
+      "sha256": "69e22b229467e5812e220fb93f16e0ad0d5d192865b9aae685060c5936eae79d",
+      "size": 4237
+    },
+    {
+      "path": "Tests/CorlexTests/SenderConsentTests.swift",
+      "sha256": "9853f0f0549085c5a1c9bb47806a3e341ad2d4d10be59aa61fad2b1174ae9046",
+      "size": 2077
+    },
+    {
+      "path": "Tests/CorlexTests/SenderTests.swift",
+      "sha256": "9ce9e10e8419c60867787fca83ab77e37ae3e9335fd08d204de76ac2c4f59979",
+      "size": 6284
+    },
+    {
+      "path": "Tests/CorlexTests/StorageBindingTests.swift",
+      "sha256": "740984f17972f41d908b326aeb4945711ec132501366772f69bf68d6aea322c7",
+      "size": 1728
+    },
+    {
+      "path": "Tests/CorlexTests/TestSupport.swift",
+      "sha256": "cc948b1c3552efaeaa58f9d8828121f47a978ec46634c087480fd86188137149",
+      "size": 5628
+    },
+    {
+      "path": "Tests/CorlexTests/TransportSecurityTests.swift",
+      "sha256": "941d859a36bd3b7559994f468b3687274497117a5b0546d5579920ac61cf68a0",
+      "size": 9774
+    },
+    {
+      "path": "Tests/Foundation/PlatformBoundaries.swift",
+      "sha256": "431c6e83975ddadde0f172239e1fd3efa8c2196860509fc327027fe7557bd245",
+      "size": 1577
+    },
+    {
+      "path": "Tests/Native/rearm.test.c",
+      "sha256": "d13450e60fcd3d2680013b824ce992c351f853ceab729a6ff624db409b528740",
+      "size": 3663
+    },
+    {
+      "path": "Tests/NativeException/main.swift",
+      "sha256": "7b0b5300747e7803f9041dec201804f11ce0676395cca478806b6827767740a8",
+      "size": 1172
+    },
+    {
+      "path": "Tests/NativeWriter/main.swift",
+      "sha256": "1af54d3a095b2e7e4372198c19168865c885345a68b6f2de6d5e60f898bbebdd",
+      "size": 4143
+    },
+    {
+      "path": "Tools/Package.swift",
+      "sha256": "688fc26fe3ad8c2ca156d3a4a51324bc3d697d626948fcc202f25d83f705289a",
+      "size": 811
+    },
+    {
+      "path": "Tools/Sources/corlex-symtab/DwarfLineParser.swift",
+      "sha256": "27ada37b7045619e45cdc086390cc0c170d87fc5232ece22ae46f6a2b79dc8fd",
+      "size": 3853
+    },
+    {
+      "path": "Tools/Sources/corlex-symtab/FunctionReader.swift",
+      "sha256": "0d4ce448301abb43f4871819fd7418c28f05bcc606483994833f2bdaacb8561e",
+      "size": 3308
+    },
+    {
+      "path": "Tools/Sources/corlex-symtab/Generator.swift",
+      "sha256": "7cf5c84c6b1246dfa24ff9c479be6c148a8ad84df8d1803df01c21d0fcbbfd4c",
+      "size": 2631
+    },
+    {
+      "path": "Tools/Sources/corlex-symtab/MachOInfo.swift",
+      "sha256": "2a4b51a58d7b026ee4dcf0a7f5e689a8cab11484e6701585887ed4e1ed80e33a",
+      "size": 2645
+    },
+    {
+      "path": "Tools/Sources/corlex-symtab/main.swift",
+      "sha256": "f184e12edbf5ee434d81a003610d5ca6628ff8b275087a38d8245a05f0772dc7",
+      "size": 1467
+    },
+    {
+      "path": "Tools/Sources/corlex-symtab/ProcessRunner.swift",
+      "sha256": "ccf181d7e372da2b903bf65bc068e58744a6d162a88d0a3c8422f62f2e3b4994",
+      "size": 2357
+    },
+    {
+      "path": "Tools/Sources/corlex-symtab/Symtab.swift",
+      "sha256": "6acd8024df496ef59478ae567287c5df2d49e411708a1052e633b971a9a12d92",
+      "size": 2057
+    },
+    {
+      "path": "Tools/Sources/corlex-symtab/SymtabBuilder.swift",
+      "sha256": "1da283b326e5da169910d604690d42acf2d396717ee4ce92c7ca3ecbb94933d6",
+      "size": 3579
+    },
+    {
+      "path": "Tools/test-client.sh",
+      "sha256": "e8b176712ce59c86386590a9e837b3ad96b1c34903aad8ce20a01502f4d8f466",
+      "size": 1365
+    },
+    {
+      "path": "Tools/test-crash-exception.sh",
+      "sha256": "24198431baffdabf08f74b39c8d26984cf676a7faaf33e1eee81cfb816f3ab77",
+      "size": 1333
+    },
+    {
+      "path": "Tools/test-crash-rearm.sh",
+      "sha256": "4fb2a4b08a0291b148f14d0c599eac4dfaa5ac1576d4b4a29e8e34f584c37db5",
+      "size": 512
+    },
+    {
+      "path": "Tools/test-crash-writer.sh",
+      "sha256": "0ac3b6e4bd430dc7d3254b807525bff066638b5a3187b752de7ae1ce9919165a",
+      "size": 1315
+    },
+    {
+      "path": "Tools/test-transport.sh",
+      "sha256": "0b2008ae2efeb62ecfe16ac0ea1b1baae17b799bbb7a38bd549f37dd84937bb8",
+      "size": 2416
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/EndToEndTests.swift",
+      "sha256": "8d32e4dfc40ad8bb1bfc8596271b8be2c575b41ff7bc89353387bc186ded289e",
+      "size": 5308
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/ExampleAppTests.swift",
+      "sha256": "95c14704f4a0bd1724a0dfc7e6d7260988b7bcac183eaacc04d580f9dc8d00d4",
+      "size": 3406
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/Fixtures/Paywall.swift",
+      "sha256": "9cf58c9f96bf60fcd9a058d14ffee8ba1ee0c139652e2e487450f26a011d2cd6",
+      "size": 680
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/ParserTests.swift",
+      "sha256": "e8d8a23fc005b3317e14221ba73847476e9f5b186b9cafa68c30467ab4766f47",
+      "size": 8386
+    },
+    {
+      "path": "Tools/Tests/CorlexSymtabTests/ReferenceSymtab.swift",
+      "sha256": "f7a9a8f4ef02cbcae32da9d26607a24c5600790039b64c7bbc2e76020ca17b4d",
+      "size": 3154
+    }
+  ]
+}

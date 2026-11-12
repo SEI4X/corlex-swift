@@ -1,0 +1,52 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T20:49:26Z",
+    "component": {
+      "type": "library",
+      "name": "Corlex Swift SDK",
+      "version": "0.1.0",
+      "purl": "pkg:generic/corlex-swift@0.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "corlex:scope",
+        "value": "Reviewed SwiftPM SDK and build-only Tools manifests; no external SwiftPM package dependencies. Empty components is not a claim about the whole host application."
+      },
+      {
+        "name": "corlex:sdk-source-tree:sha1",
+        "value": "ec31ab544bc84fca33039793238b8a50ee96e3e0"
+      },
+      {
+        "name": "corlex:sdk-package-manifest:sha256",
+        "value": "307828ddd2784a1017506bc3191b5c7ed131f4fa0947d38478771a1a1ba6a43d"
+      },
+      {
+        "name": "corlex:tools-package-manifest:sha256",
+        "value": "688fc26fe3ad8c2ca156d3a4a51324bc3d697d626948fcc202f25d83f705289a"
+      },
+      {
+        "name": "corlex:owned-license:sha256",
+        "value": "0596a484c067a63b693813f9e92179195dc87097ff1ad6e500d9c3f2de0c5919"
+      },
+      {
+        "name": "corlex:platform-frameworks",
+        "value": "AppTrackingTransparency, CoreFoundation, CryptoKit, Darwin, Foundation, ObjectiveC, SwiftUI and UIKit are Apple platform frameworks, not vendored package sources. CCorlexCrash is owned SDK source under the same MIT license."
+      },
+      {
+        "name": "corlex:validation",
+        "value": "SDK and Tools swift package dump-package dependencies[]; full iOS134/134, failures0/skips0;76 exact client/ledger and59 Foundation/transport tests; ASan writer4 modes and fresh-process exception passed. Standalone public-source/hosted checks remain required before release."
+      }
+    ]
+  },
+  "components": []
+}
