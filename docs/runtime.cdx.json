@@ -1,0 +1,56 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T22:40:47Z",
+    "component": {
+      "type": "library",
+      "name": "Corlex Swift SDK",
+      "version": "0.1.0",
+      "purl": "pkg:generic/corlex-swift@0.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "corlex:scope",
+        "value": "Reviewed SwiftPM SDK and build-only Tools manifests; no external SwiftPM package dependencies. Empty components is not a claim about the whole host application."
+      },
+      {
+        "name": "corlex:sdk-source-tree:sha1",
+        "value": "5fdaf94fdb672ab43a24df4bf8cb6df2c8e2d7d0"
+      },
+      {
+        "name": "corlex:sdk-package-manifest:sha256",
+        "value": "307828ddd2784a1017506bc3191b5c7ed131f4fa0947d38478771a1a1ba6a43d"
+      },
+      {
+        "name": "corlex:tools-package-manifest:sha256",
+        "value": "688fc26fe3ad8c2ca156d3a4a51324bc3d697d626948fcc202f25d83f705289a"
+      },
+      {
+        "name": "corlex:owned-license:sha256",
+        "value": "0596a484c067a63b693813f9e92179195dc87097ff1ad6e500d9c3f2de0c5919"
+      },
+      {
+        "name": "corlex:platform-frameworks",
+        "value": "AppTrackingTransparency, CoreFoundation, CryptoKit, Darwin, Foundation, ObjectiveC, SwiftUI and UIKit are Apple platform frameworks, not vendored package sources. CCorlexCrash is owned SDK source under the same MIT license."
+      },
+      {
+        "name": "corlex:validation",
+        "value": "SDK/Tools SwiftPM manifests have no external package dependencies;76 exact Foundation client/ledger tests and real C/Swift main-thread preparation own/host ASan probes pass. Full hosted iOS suite, native writer/exception/rearm and transport gates are required on this exact public revision before release."
+      },
+      {
+        "name": "corlex:required-reason-file-metadata",
+        "value": "FileTimestamp C617.1: OwnerChoices invokes fstat only for regular-file validation in the SDK app-container privacy store; metadata is not collected as telemetry."
+      }
+    ]
+  },
+  "components": []
+}

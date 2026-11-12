@@ -1,0 +1,64 @@
+name: Public SDK CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: sdk-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - run: xcodebuild -version && swift --version
+      - name: Select an installed iOS simulator
+        run: |
+          sdk_simulator_id=$(xcrun simctl list devices available -j | python3 -c 'import json,sys; d=json.load(sys.stdin)["devices"]; p=[v["udid"] for k,vs in d.items() if ".iOS-" in k for v in vs if v["name"].startswith("iPhone")]; assert p,"No iOS simulator installed"; print(p[-1])')
+          echo "SDK_SIMULATOR_ID=$sdk_simulator_id" >> "$GITHUB_ENV"
+      - name: Boot the test simulator and wait for readiness
+        run: xcrun simctl bootstatus "$SDK_SIMULATOR_ID" -b
+      - name: Run the complete SDK tests on iOS
+        run: xcodebuild test -scheme Corlex -destination "platform=iOS Simulator,id=$SDK_SIMULATOR_ID" -parallel-testing-enabled NO -derivedDataPath "$RUNNER_TEMP/corlex-sdk" -resultBundlePath "$RUNNER_TEMP/corlex-sdk.xcresult" -quiet
+      - name: Report test failure details
+        if: failure()
+        run: |
+          if [ -d "$RUNNER_TEMP/corlex-sdk.xcresult" ]; then
+            xcrun xcresulttool get test-results summary --path "$RUNNER_TEMP/corlex-sdk.xcresult"
+          fi
+      - name: Test the symbol processing tools
+        run: swift test --package-path Tools --scratch-path "$RUNNER_TEMP/corlex-tools"
+      - name: Check alternate stack preparation without pending capture
+        run: |
+          Tools/test-altstack.sh
+          Tools/test-thread-stack.sh
+      - name: Exercise the actual transport source security harness
+        run: Tools/test-transport.sh
+      - name: Exercise the exact client and privacy pipeline
+        run: Tools/test-client.sh
+      - name: Check native crash reactivation and admitted-writer isolation
+        run: Tools/test-crash-rearm.sh
+      - name: Exercise exception admission in a fresh process
+        run: Tools/test-crash-exception.sh
+      - name: Check scoped crash writer privacy and lock ordering
+        run: Tools/test-crash-writer.sh
+  security:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+        with:
+          go-version: '1.26.11'
+          cache: false
+      - name: Scan all source history without exposing matches
+        run: go run github.com/zricethezav/gitleaks/v8@v8.30.1 git --config .gitleaks.toml --redact --no-banner .
